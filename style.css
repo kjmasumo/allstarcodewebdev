@@ -1,10 +1,16 @@
 body{
     background-color: #87ceeb;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(images/marathon-start-2.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    margin:0;
+    padding: 0;
 }
 
 .info-panel {
-    background-color: white;
-    border: 2px solid blue;
+    background-color: #FCD299;
+    border: 2px solid;
     border-radius: 25px;
     margin-left: 15%;
     margin-right: 15%;
@@ -22,3 +28,95 @@ body{
 #about-paragraph {
     margin-right: 5%;
 }
+
+.race-panel {
+    display: flex;
+    font-size: 20pt;
+    border: 2px solid black;
+    margin-right: 10%;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    overflow:auto;
+    background-color: #DC582A;
+    color: white;
+}
+
+.race-panel:hover {
+    background-color: orange;
+}
+
+#run-holder {
+    display: flex;
+    box-sizing: border-box;
+}
+
+#favorite-runs-holder {
+    margin-left: 5%;
+}
+
+.favorite-run {
+    background-color: #DC582A;
+    color: white;
+}
+
+.favorite-run a{
+    color: white;
+    text-decoration: none;
+}
+
+.favorite-run:hover{
+    background-color: orange;
+}
+
+.run-info-holder {
+    display: flex;
+    border: 2px solid black;
+    margin-bottom: 5%;
+}
+
+.run-info {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.widget {
+    border: 2px solid black;
+}
+
+#calendar-holder {
+    display: flex;
+}
+
+#race-img {
+    margin-top:20%;
+}
+
+#navbar {
+    background: #FCD299;
+    margin-bottom: 2%;
+    padding: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#navbar a {
+    margin-left: 10%;
+    font-size: 20pt;
+    color: white;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #DC582A;
+    border-radius: 25px;
+}
+
+#navbar a:hover {
+    background-color: orange;
+}
+
+

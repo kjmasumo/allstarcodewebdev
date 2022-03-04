@@ -5,33 +5,114 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="info-panel">
-        <h1>About Me</h1>
+    <div id="navbar">
+        <a href="#runner-profile">Runner Profile</a>
+        <a href="#race-calendar">Race Calendar</a>
+        <a href="#recent-and-favorite-routes">Recent and Favorite Routes</a>
+        <a href="#strava-profile">Strava Profile</a>
+    </div>
+    <div class="info-panel" id="runner-profile">
+        <h1>Runner Profile</h1>
         <div id="about">
             <div id="about-paragraph">
+                <h2>Bio</h2>
                 <p>
-                    Hi, my name is Ken Masumoto, and I'm a first-year graduate student at the University of Washington studying
-                    Information Management. Information Management is the study of finding the best ways to get the correct
-                    information to the correct people within companies. I'm specializing in Data Science and Information Architecture.
-                    Data Science uses programming and algorithms to find things out about large sets of data. Information Architecture
-                    has to do with the way things on structures on things like websites to create as little confusion as possible.
-                    <br>
-                    For hobbies, I like to run and play chess online. I ran on my high school Cross Country and Track teams, and after
-                    a short hiatus through undergrad, I decided to take it up again in the summer of 2020. I've sinced joined the Husky
-                    Running Club, an RSO (Registered Student Organization), and run anywhere from 40-60 miles a week. I ran the Seattle
-                    Half-Marathon in November of 2021, and I finished in 1:28:15 (6:44/mile pace). In the coming year, I hope to race 
-                    some 5k's, 10k's a marathon, and another half-marathon. My chess story is somewhat similar. I learned how to play
-                    in elementary school and picked it back up in 2020 after a (much longer) hiatus. My online rating bounces anywhere
-                    from 1300-1500.
+                    My name is Ken Masumoto and I'm a graduate student studying Information Management at the University of Washington,
+                    specializing in Data Science and Information Architecture. I started running in elementary school, and ran with my
+                    school teams throughout high school. After a short hiatus during my undergraduate studies, I found a revitalized 
+                    passion for running in the summer of 2020, and run more now than ever. I am hoping to enter more races this coming
+                    year to break some of my old personal records. This site tracks my running progress and accomplishments.
                 </p>
+                <h2>Personal Records</h2>
+                <p><b>800m: </b>2:13 (2016)</p>
+                <p><b>1600m: </b>5:15 (2016)</p>
+                <p><b>5K: </b>18:53 (2016)</p>
+                <p><b>10K: </b>40:54 (Unofficial 2021)</p>
+                <p><b>Half-Marathon: </b>1:28:15 (2021)</p>
+
             </div>
             <div id="my-picture">
-                <img src="my_picture.jpeg" height="249" width="214">
+                <img src="images/my_picture.jpeg" height="249" width="214" alt="Picture of my face">
             </div>
         </div>
     </div>
-    <div class="info-panel">
-        <h1></h1>
+    <div class="info-panel" id="race-calendar">
+        <h1>Race Calendar</h1>
+        <div id="calendar-holder">
+            <div>
+                <h2>Recent Races</h2>
+                <a href="https://results.raceroster.com/en-US/results/detail/bc2gdygqvkdusd2m">
+                    <div class="race-panel">
+                        <p>Seattle Half-Marathon 2021 (11/28/21)</p>
+                        <img src="images/seattle-half-marathon-img.jpg" height="100" width="160" class="race-image" alt="Seattle Marathon 2021 Logo">
+                    </div>
+                </a>
+                <h2>Upcoming Races</h2>
+                <a href="https://runsignup.com/Race/WA/Seattle/CherryBlossomRun">
+                    <div class="race-panel">
+                        <p>Seattle Cherry Blossom Run (3/27/22)</p>
+                        <img src="images/Cherry-Blossom-Run-logo-outlined-2_2.png" height="100" width="160" class="race-image" alt="Cherry Blossom Run Logo">
+                    </div>
+                </a>
+                <a href="https://www.seattlemarathon.org/summer">
+                    <div class="race-panel">
+                        <p>Seattle Marathon Series: 5K (8/27/22)</p>
+                        <img src="images/seattle-5k.png" height="120" width="120" class="race-image" alt="Seattle Summer 5K Logo">
+                    </div>
+                </a>
+                <a href="https://raceroster.com/events/2022/55336/2022-amica-insurance-seattle-marathon">
+                    <div class="race-panel">
+                        <p>Seattle Half-Marathon 2022 (11/26/22)</p>
+                        <img src="images/seattle-marathon-2022.png" height="120" width="140" class="race-image" alt="Seattle Marathon 2022 Logo">
+                    </div>
+                </a>
+            </div>
+            <div>
+                <img src="images/racingcropped.jpg" id="race-img" alt="Racers starting a race">
+            </div>
+        </div>
+    </div>
+    <div class="info-panel" id="recent-and-favorite-routes">
+        <h1>Recent and Favorite Routes</h1>
+        <div id="run-holder">
+            <div>
+                <h2>Recents</h2>
+                <iframe class="widget" height='454' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/63941425/latest-rides/11fa3e4c2ca704314196ad0c4aca6f26965e43c9'></iframe>
+            </div>
+            <div id="favorite-runs-holder">
+                <h2>Favorites</h2>
+                <div>
+                    <div class="favorite-run">
+                        <a href="https://www.strava.com/activities/6738412419">
+                            <div class="run-info-holder">
+                                <img src="images/lakeunionmap.PNG" height="198" width="361" alt="Map of the Lake Union run">
+                                <div class="run-info">
+                                    <h3>Lake Union</h3>
+                                    <p><b>Distance: </b> 9m</p>
+                                    <p><b>Elevation Gain: </b> 330ft</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="favorite-run">
+                        <a href="https://www.strava.com/activities/6719134599">
+                            <div class="run-info-holder">
+                                <img src="images/ravennamap.PNG" height="198" width="361" alt="Map of the Ravenna run">
+                                <div class="run-info">
+                                    <h3>Ravenna</h3>
+                                    <p><b>Distance: </b> 8m</p>
+                                    <p><b>Elevation Gain: </b> 540ft</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div class="info-panel" id="strava-profile">
+        <h1>Strava Profile</h1>
+        <iframe class="widget" height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/63941425/activity-summary/11fa3e4c2ca704314196ad0c4aca6f26965e43c9'></iframe>
     </div>
     <h1></h1>
     <p></p>
